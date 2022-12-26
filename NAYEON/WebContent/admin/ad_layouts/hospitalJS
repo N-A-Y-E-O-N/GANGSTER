@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+<script>
+    function validateForm(hospital) { 
+        if (hospital.hos_name.value == "") {
+            alert("병원명을 입력하세요.");
+            hospital.hos_name.focus();
+            return false;
+        }
+        if (hospital.hos_add.value == "") {
+            alert("주소를 입력하세요.");
+            hospital.hos_add.focus();
+            return false;
+        }
+        if (hospital.hos_link.value == "") {
+            alert("링크를 입력하세요.");
+            hospital.hos_link.focus();
+            return false;
+        }
+    }
+</script>

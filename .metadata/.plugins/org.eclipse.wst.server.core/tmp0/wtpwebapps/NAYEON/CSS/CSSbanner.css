@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.outer {
+
+  width: 1200px;
+  height: 200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.inner-list {
+  display: flex;
+  transition: .3s ease-out;
+  height: 100%;
+}
+
+
+.button-list {
+  text-align: center;
+  
+}
+
+button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    }
+
+

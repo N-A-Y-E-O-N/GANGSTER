@@ -1,0 +1,58 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    
+
+<!-- 상단 로고  -->
+<h1 style="text-align: center;"> <a href="main.jsp"/> <img src="icon/logo.png" width="100" height="100"> </h1>
+ 
+ 
+ 
+<!-- 로그인/회원가입/로그아웃/마이페이지  -->
+<%//1.한글처리, 파라미터 
+request.setCharacterEncoding("UTF-8");
+String id = (String) session.getAttribute("id");
+String name = request.getParameter("name");
+%>
+
+
+ <% if (session.getAttribute("id") == null) { %>
+ <a href="login.jsp"><div style="position:absolute; right:80px; top:80px;">  로그인  | </div></a>
+ <a href="l_newmember.jsp"><div style="position:absolute; right:20px; top:80px;">  회원가입 </div></a> 
+
+
+ <% }else if(id != null){
+	if(id.equals("admin")){ %>
+	 <script>location.href = "admin/ad_main.jsp"; </script>
+<% } else { %>
+	<div style="position:absolute; right:20px; top:60px;">  <%=id%> 님 환영합니다 ! </div>
+	 <a href="logout.jsp"><div style="position:absolute; right:80px; top:80px;">  로그아웃  | &nbsp;&nbsp; </div></a> 
+ 	 <a href="mypage.jsp"><div style="position:absolute; right:20px; top:80px;">  마이페이지 </div></a>
+<%} }%>
+
+<hr>
+
+
+<!-- 메뉴 -->
+<nav>
+   <!-- 메뉴 버튼 디자인  -->
+   <div class="menu-btn" >
+      <div class="line line__1"></div>
+      <div class="line line__2"></div>
+      <div class="line line__3"></div>
+   </div>
+
+
+   <ul class="nav-links">
+      <a href="center.jsp"> <li class="link"> 센터 소개 </li> </a>
+      <a href="adopt.jsp"> <li class="link"> 입양 </li> </a>
+	  <a href="volunteer.jsp"> <li class="link"> 봉사활동 </li> </a>
+	  <a href="support.jsp"> <li class="link"> 후원 </li> </a>
+	  <a href="hospital.jsp"> <li class="link"> 동물병원 </li> </a>
+	  <a href="mangdog.jsp"> <li class="link"> MANGDOG CONTEST </li> </a>
+	  <a href="withdog.jsp"> <li class="link"> WITH DOG </li> </a>    
+	</ul>  	  
+</nav>
+
+<!-- 메뉴 JS 설정 -->
+<script  src="JS/JSmenu.js"></script>

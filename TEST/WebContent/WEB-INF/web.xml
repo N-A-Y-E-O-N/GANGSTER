@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>study</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- 타이머 필터 -->
+	<filter>
+		<filter-name>timerFilter</filter-name>
+		<filter-class>com.filter.TimerFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>timerFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- 인코딩 필터 -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>com.filter.EncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>categoryServlet</servlet-name>
+		<servlet-class>com.shoppingmall.category.CategoryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>categoryServlet</servlet-name>
+		<url-pattern>/shop/category/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>productServlet</servlet-name>
+		<servlet-class>com.shoppingmall.product.ProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>productServlet</servlet-name>
+		<url-pattern>/shop/product/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>detailServlet</servlet-name>
+		<servlet-class>com.shoppingmall.detail.DetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>detailServlet</servlet-name>
+		<url-pattern>/shop/detail/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- 쇼핑몰 프로젝트() -->
+	<servlet>
+		<servlet-name>shoppingServlet</servlet-name>
+		<servlet-class>com.shoppingmall.join.ShoppingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>shoppingServlet</servlet-name>
+		<url-pattern>/shop/join/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- 쇼핑몰 프로젝트() -->
+	<servlet>
+		<servlet-name>shopServlet</servlet-name>
+		<servlet-class>com.shoppingmall.main.ShopServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>shopServlet</servlet-name>
+		<url-pattern>/shop/main/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>noticeServlet</servlet-name>
+		<servlet-class>com.shoppingmall.notice.NoticeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>noticeServlet</servlet-name>
+		<url-pattern>/shop/notice/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>orderServlet</servlet-name>
+		<servlet-class>com.shoppingmall.order.OrderServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>orderServlet</servlet-name>
+		<url-pattern>/shop/order/*</url-pattern>
+	</servlet-mapping>
+
+</web-app>

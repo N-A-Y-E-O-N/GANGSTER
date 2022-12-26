@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="dao"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="dao"/>
+			<item value="close"/>
+			<item value="update"/>
+			<item value="upda"/>
+			<item value="up"/>
+			<item value="DTOcommList"/>
+			<item value="float: left;"/>
+			<item value="&lt;br&gt;"/>
+			<item value="form"/>
+			<item value="class"/>
+			<item value="btn_login"/>
+			<item value="btn"/>
+			<item value="finger"/>
+			<item value="000"/>
+			<item value="border"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="btnL"/>
+			<item value="btn_login"/>
+			<item value="663300"/>
+			<item value="99CC33"/>
+			<item value="99CC00"/>
+			<item value="align=&quot;middle&quot;"/>
+			<item value="middle"/>
+			<item value="psmt"/>
+			<item value="mang_"/>
+			<item value="\"/>
+			<item value="\\"/>
+			<item value="dog_"/>
+			<item value="dog"/>
+			<item value=";"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1279"/>
+		<item key="DIALOG_Y_ORIGIN" value="83"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="729"/>
+		<item key="DIALOG_Y_ORIGIN" value="399"/>
+	</section>
+</section>

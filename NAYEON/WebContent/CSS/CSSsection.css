@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+header{
+	background-color : #FFF;
+	height :  100px;
+	width : 100% ;
+	line-height: 90px;
+	border-bottom : 3px solid #e8e8e8;
+	position: fixed;
+}
+
+
+section{
+	text-align : center;
+	vertical-align: center;
+	content:'';
+    top: 0; left: 0;
+	z-index: -1;
+	background: white;	
+	
+
+}
+
+
+
+
+
+
+
+

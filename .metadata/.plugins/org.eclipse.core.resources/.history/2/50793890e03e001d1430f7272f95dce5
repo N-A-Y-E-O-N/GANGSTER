@@ -1,0 +1,61 @@
+<%@page import="gang.DAOmember"%>
+<%@page import="gang.DTOmember"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>주인없는 하늘아래</title>
+</head>
+<body>
+<script type="text/javascript">
+  <!-- 비밀번호 변경 새창 열기-->
+  function mp_pwPop(){
+    var mp_pwPop = window.open('M_mypage/mp_pw.jsp', '비밀번호 변경', 'width=500px,height=400px, scrollbars=yes');
+  }
+</script>
+
+ <% 
+request.setCharacterEncoding("UTF-8");
+String id = (String) session.getAttribute("id"); 
+ %>
+
+
+<form action="">
+<div style="width: 30%; margin: auto;">
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">아이디</span>
+  <input type="text" class="form-control" id="id" name="id" value="<%=id %>" readonly/> 
+
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">이름</span>
+  <input type="text" class="form-control" placeholder="NAME" id="name" name="name" required/>
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">이메일</span>
+  <input type="text" class="form-control" placeholder="EMAIL ADDRESS" id="mail" name="mail" required/>
+</div>   
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">연락처</span>
+    <input type="text" class="form-control"  placeholder="- 입력 제외" name="tel" maxlength="11"  id="tel" name="tel"
+ 	 oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required/> 
+</div>  
+ 
+	<a href="#" style="margin-left: 430px;"> 탈퇴하기</a>
+</div>
+
+
+
+<button type="submit" class="btn btn-outline-secondary" > 회원정보 수정</button>	
+<button type="button" class="btn btn-outline-secondary" onclick="mp_pwPop()"> 비밀번호 변경 </button>
+</form>
+
+
+</body>
+</html>

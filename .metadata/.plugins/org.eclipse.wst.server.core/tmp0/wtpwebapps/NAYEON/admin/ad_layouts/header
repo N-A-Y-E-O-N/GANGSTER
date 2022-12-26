@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<!-- header -->
+
+<!-- 상단 로고  -->
+ <h1 style="text-align: center;"><a href="ad_main.jsp"> <img src="../icon/m_logo.png" width="100" height="100"></a> </h1>
+ 
+ 
+ 
+<!-- 로그인/회원가입/로그아웃/마이페이지  -->
+<%//1.한글처리, 파라미터 
+request.setCharacterEncoding("UTF-8");
+String id = (String) session.getAttribute("id");
+String name = request.getParameter("name");
+%>
+
+
+ <div style="position:absolute; right:20px; top:60px;"> <%=id%> 님 환영합니다 </div>
+ <a href="../logout.jsp"><div style="position:absolute; right:80px; top:80px;">  로그아웃  |  </div></a> 
+ <a href="ad_manage.jsp"><div style="position:absolute; right:20px; top:80px;">  회원관리 </div></a>
+<hr>
+ 
+
+
+<!-- 메뉴 -->
+<nav>
+   <!-- 메뉴 버튼 디자인  -->
+   <div class="menu-btn" >
+      <div class="line line__1"></div>
+      <div class="line line__2"></div>
+      <div class="line line__3"></div>
+   </div>
+
+
+   <ul class="nav-links">
+      <a href="ad_adopt.jsp"> <li class="link"> 입양 </li> </a>
+	  <a href="ad_support.jsp"> <li class="link"> 후원 </li> </a>
+	  <a href="ad_hospital.jsp"> <li class="link"> 동물병원 </li> </a>
+	  <a href="ad_mangdog.jsp"> <li class="link"> MANGDOG CONTEST </li> </a>
+	  <a href="ad_withdog.jsp"> <li class="link"> WITH DOG </li> </a>    
+	</ul>  	  
+</nav>
+
+<!-- 메뉴 JS 설정 -->
+<script  src="../JS/JSmenu.js"></script>

@@ -1,0 +1,16 @@
+127.0.0.1 - - [12/Sep/2022:18:07:50 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:07:59 +0900] "GET /NAYEON/hospital.jsp HTTP/1.1" 200 6456
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:08:00 +0900] "GET /NAYEON/CSS/CSStab.css HTTP/1.1" 200 884
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:08:00 +0900] "GET /NAYEON/CSS/CSSsection.css HTTP/1.1" 200 490
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:08:00 +0900] "GET /NAYEON/CSS/CSSmenu.css HTTP/1.1" 200 5244
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:08:00 +0900] "GET /NAYEON/CSS/CSSbanner.css HTTP/1.1" 200 422
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:08:00 +0900] "GET /NAYEON/CSS/CSShelp.css HTTP/1.1" 200 1388
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:08:00 +0900] "GET /NAYEON/icon/logo.png HTTP/1.1" 200 73731
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:08:00 +0900] "GET /NAYEON/JS/JStab.js HTTP/1.1" 200 643
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:08:00 +0900] "GET /NAYEON/JS/JSmenu.js HTTP/1.1" 200 2878
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:08:00 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:08:03 +0900] "POST /NAYEON/hospital.jsp?target=M_hospital/h_search HTTP/1.1" 500 4448
+127.0.0.1 - - [12/Sep/2022:18:09:40 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:09:42 +0900] "GET /NAYEON/hospital.jsp HTTP/1.1" 200 6456
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:09:43 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [12/Sep/2022:18:09:51 +0900] "POST /NAYEON/hospital.jsp?target=M_hospital/h_search HTTP/1.1" 200 6461

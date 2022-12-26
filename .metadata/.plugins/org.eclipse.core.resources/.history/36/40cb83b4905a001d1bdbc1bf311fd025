@@ -1,0 +1,29 @@
+<%@page import="gang.DTOdog"%>
+<%@page import="java.util.List"%>
+<%@page import="gang.DAOdog"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>주인없는 하늘아래</title>
+</head>
+<body>
+<%
+request.setCharacterEncoding("UTF-8");
+String dog_detail_save =  request.getParameter("dog_detail_save");
+
+
+
+%>
+
+
+<img src="../dog_img/<%=dog_detail_save %>">
+
+
+</body>
+</html>
+
+
+

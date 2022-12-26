@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\k99_1\OneDrive\바탕 화면\두루미\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3785737077.index
+264271280.index
+252278278.index
+1711709002.index
+571461959.index
+2221756627.index
